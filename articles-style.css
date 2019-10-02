@@ -53,17 +53,17 @@ a {
   object-fit: fill;
 }
 
-#padding-box {
+.padding-box {
   margin: auto;
 }
 @media (max-width: 1268px) {
-  #padding-box {
+  .padding-box {
     padding-left: 44px;
     padding-right: 44px;
   }
 }
 @media (max-width: 500px) {
-  #padding-box {
+  .padding-box {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -116,7 +116,7 @@ header .menu__item {
   height: 90px;
   width: 120px;
 }
-@media (max-width: 660px) {
+@media (max-width: 850px) {
   header .menu__item {
     width: 90px;
   }
@@ -189,14 +189,18 @@ header .menu #drop-down:hover {
 }
 header .sign {
   width: 180px;
-}
-header .sign p {
+  order: -1;
   display: block;
   height: 90px;
   color: white;
 }
+@media (max-width: 900px) {
+  header .sign {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
-  header .sign p {
+  header .sign {
     visibility: hidden;
   }
 }
@@ -228,6 +232,9 @@ header .form-search #loupa {
 }
 header .form-search #loupa:checked ~ #search {
   display: inline;
+}
+header .form-search #loupa:checked ~ .sign {
+  display: none;
 }
 header .form-search label {
   height: 18px;

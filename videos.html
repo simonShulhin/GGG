@@ -14,11 +14,11 @@
 
 <body>
   <div class="color--secondary">
-    <header class="flex-container navigation" id="padding-box">
+    <header class="flex-container navigation padding-box">
 
       <nav>
         <ul class="menu flex-container">
-          <div class="logo"></div>
+          <li class="logo"></li>
           <!--home-->
           <li class="menu__item home">
             <a href="" class="uppercase menu__link">Home</a>
@@ -62,9 +62,7 @@
 
       <!--search-->
       <div class="flex-container">
-        <form action="" class="sign flex-container">
-          <p><a href="">Sign in</a> / <a href="">Sign up</a></p>
-        </form>
+
 
         <form action="" class="form-search">
           <input type="checkbox" id="loupa">
@@ -78,7 +76,16 @@
             </svg> -->
           </label>
           <input type="search" name="search" id="search" placeholder="Search">
+
+          <p class="sign flex-container">
+            <a href="">Sign in</a> / <a href="">Sign up</a>
+          </p>
+
         </form>
+
+        <!-- <form action="" class="sign flex-container">
+          <p><a href="">Sign in</a> / <a href="">Sign up</a></p>
+        </form> -->
 
 
         <!--burger_menu-->
@@ -124,19 +131,19 @@
 
 
 
-  <main id="padding-box">
+  <main class="padding-box">
     <div class="size-of-article">
 
       <article class="video-background">
         <div class="video--main">
           <video id="video-on-click" class="video-fit"
-            src="video/Component vs element.mp4" poster="img/video.png">
+            src="video/Component-vs-element.mp4" poster="img/video.png">
           </video>
           <div id="video-button">
             <button id="button--play" onclick="playVideo()">
-              <div id="tryangle" class="content--play">
+              <span id="tryangle" class="content--play">
 
-              </div>
+              </span>
             </button>
 
           </div>
@@ -153,37 +160,37 @@
       <article class="pack-of-videos">
         <!-- supergirl-->
         <section class="video--secondary">
-          <video src="" poster="img/supergirl.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/supergirl.png" class="video-fit"></video>
           <h3>The Supergirl Trailer is Here</h3>
           <p><a href="">ign.com</a></p>
         </section>
         <!--mad max-->
         <section class="video--secondary">
-          <video src="" poster="img/mad-max.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/mad-max.png" class="video-fit"></video>
           <h3>Mad Max: Fury Road</h3>
           <p><a href="">nytimes.com</a></p>
         </section>
         <!--elephant-->
         <section class="video--secondary">
-          <video src="" poster="img/elephant.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/elephant.png" class="video-fit"></video>
           <h3>Elephants Have a Secret Language</h3>
           <p><a href="">cnn.com</a></p>
         </section>
         <!--Carey-->
         <section class="video--secondary">
-          <video src="" poster="img/carey.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/carey.png" class="video-fit"></video>
           <h3>Mariah Carey -- Diva Does Disneyland</h3>
           <p><a href="">tmz.com</a></p>
         </section>
         <!--Lebron-->
         <section class="video--secondary">
-          <video src="" poster="img/lebron.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/lebron.png" class="video-fit"></video>
           <h3>Cleveland's Elephant in the Room</h3>
           <p><a href="">espn.com</a></p>
         </section>
         <!--piggy-->
         <section class="video--secondary">
-          <video src="" poster="img/piggy.png" class="video-fit"></video>
+          <video src="video/Component-vs-element.mp4" poster="img/piggy.png" class="video-fit"></video>
           <h3>Miss Piggy Gets Feminist Award</h3>
           <p><a href="">usatoday.com</a></p>
         </section>
@@ -215,7 +222,7 @@
 
 
   <footer>
-    <nav class="footer flex-container" id="padding-box">
+    <nav class="footer flex-container padding-box">
       <ul class="flex-container footer-navigation">
         <li><a href="#">Home</a></li>
         <li><a href="#">Articles</a></li>
@@ -227,7 +234,7 @@
 
   </footer>
 
-  <script type="text/javascript">
+  <script>
     function playVideo() {
       var video = document.getElementById("video-on-click");
       var button = document.getElementById("button--play");

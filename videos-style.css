@@ -53,16 +53,16 @@ a {
   object-fit: fill;
 }
 
-#padding-box {
+.padding-box {
   margin: auto;
 }
 @media (max-width: 1268px) {
-  #padding-box {
+  .padding-box {
     padding: 0 44px;
   }
 }
 @media (max-width: 500px) {
-  #padding-box {
+  .padding-box {
     padding: 0 10px;
   }
 }
@@ -187,14 +187,18 @@ header .menu #drop-down:hover {
 }
 header .sign {
   width: 180px;
-}
-header .sign p {
+  order: -1;
   display: block;
   height: 90px;
   color: white;
 }
+@media (max-width: 900px) {
+  header .sign {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
-  header .sign p {
+  header .sign {
     visibility: hidden;
   }
 }
@@ -226,6 +230,9 @@ header .form-search #loupa {
 }
 header .form-search #loupa:checked ~ #search {
   display: inline;
+}
+header .form-search #loupa:checked ~ .sign {
+  display: none;
 }
 header .form-search label {
   height: 18px;
@@ -354,6 +361,9 @@ main .video--main #video-button #button--play {
 main .video--main #video-button #button--play:hover {
   background-color: #067ad7;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
+}
+main .video--main #video-button #tryangle {
+  display: block;
 }
 main .video--main #video-button .content--play {
   border: 10px solid transparent;
